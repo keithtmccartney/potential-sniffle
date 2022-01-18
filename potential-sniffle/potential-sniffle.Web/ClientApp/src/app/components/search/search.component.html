@@ -1,0 +1,20 @@
+<h1 id="tableLabel">Search</h1>
+
+<p>This component demonstrates searching from the server.</p>
+
+<p *ngIf="!searches"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="searches">
+  <thead>
+    <tr>
+      <th>Match</th>
+      <th>Match Position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let search of searches">
+      <td>{{ search.citeMatch }}</td>
+      <td>{{ search.citeMatchPosition }}</td>
+    </tr>
+  </tbody>
+</table>

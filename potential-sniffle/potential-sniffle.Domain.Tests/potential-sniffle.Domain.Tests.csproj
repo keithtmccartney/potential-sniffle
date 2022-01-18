@@ -20,4 +20,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\potential-sniffle.Domain\potential-sniffle.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
